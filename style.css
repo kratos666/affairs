@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body{
 	position: relative;
 	font-size: 2rem;
@@ -37,7 +39,7 @@ body{
 	background-size: contain
 }
 .footer{
-	max-width: 30%;
+	max-width: 50%;
 	align-self: flex-end;
 	background-color: transparent;
 }
@@ -53,8 +55,11 @@ body{
 }
 .message-header{
 	border-radius:20px 20px 0 0;
-
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
+	font-weight: bold;
+	font-size: 1.8rem;
+	padding: 15px 0
 	}
 .message-header+.message-body{
 	border-radius:0 0 20px 20px;
@@ -67,21 +72,31 @@ body{
 	color: #000;
 	text-align: center;
 	border: none;
+	padding-bottom: 50px;
 }
 .message.is-danger .message-body p{
 	padding-bottom: 25px;
 	text-align: left
 }
+.message-body .control{
+	justify-content: space-around;
+}
 .fa{vertical-align: baseline}
 .fa.fa-exclamation-triangle{
 	padding-right: 35px
 }
-.button{
-	padding: 7px 50px 10px;
+.button , .input{
+	padding: 2px 50px 4px;
 	border-radius: 20px;
 	font-size: 2rem;
 	height: inherit;
 }
+.input.is-danger{
+	padding: 2px 10px 4px 45px;
+	background-color: transparent;
+	width: 140px;
+}
+
 .button.is-dark{
 	background-color: #7d7d7d;
 }
@@ -114,4 +129,49 @@ body{
 }
 .button.continue .fa.fa-angle-double-right:before{
 	vertical-align: sub;
+}
+
+.message.is-danger .message-body .has-text-centered {
+	color: #ad004d;
+	text-align: center;
+}
+
+.form-elems{
+	justify-content: space-around;
+}
+.input{
+	display: inline-block;
+}
+
+.control:not(:last-child){
+	margin-bottom: 0
+}
+.arrow-but{
+	position: relative;
+	font-size: 2.5rem;
+} 
+.arrow-left:after, .arrow-right:before{
+	width: 30px;
+	height: 101%;
+	background:#e1e1e1;
+	content: ''; 
+	z-index: 20;
+	position: absolute;
+	bottom: -1px;
+}
+.button.arrow-but.arrow-left{
+	padding: 2px 45px 4px 20px;
+}
+.button.arrow-but.arrow-left::after{
+	right: 0;
+	border-radius:20px 0 0 20px;
+
+}
+.button.arrow-but.arrow-right{
+	padding: 2px 20px 4px 45px;
+}
+.button.arrow-but.arrow-right::before{
+	left: 0;
+	border-radius:0 20px 20px 0;
+	
 }
