@@ -6,7 +6,10 @@
 	<title>start-vue</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css" />
 	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://use.fontawesome.com/86b81ac428.js"></script>
+	<script src="main.js"></script>
+	
 </head>
 
 <body>
@@ -20,7 +23,7 @@
 			<div class="container">
 
 				<!--slide-2-->
-				<article class="message is-danger slide-2">
+				<article class="message is-danger slide-2 active">
 					<div class="message-header">
 						<p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></i> This Is NOT A Dating Site!</p>
 					</div>
@@ -29,7 +32,7 @@
 						photos of women who live near you 
 						and are ready to <strong>have sex right now</strong>, 
 						we need to ask a few quick questions.</p>
-						<a class="button is-dark">OK</a>
+						<a class="button is-dark next">OK</a>
 					</div>
 				</article>
 
@@ -44,7 +47,7 @@
 							They could be your neighbors or someone you 
 							know. Do you agree to keep the identity of these 
 							women a secret?</p>
-						<a class="button is-danger">Yes</a>	
+						<a class="button is-danger next">Yes</a>	
 						<a class="button is-dark">No</a>
 					</div>
 				</article>
@@ -59,7 +62,7 @@
 							that are seeking a "relationship". They only 
 							desire quick sex. Not dating. Do you agree 
 							to this request?</p>
-						<a class="button is-danger">Yes</a>	
+						<a class="button is-danger next">Yes</a>	
 						<a class="button is-dark">No</a>
 					</div>
 				</article>
@@ -72,7 +75,7 @@
 					<div class="message-body">
 						<p>Do you agree to use a condom when having sex 
 							with a partner you meet on our site?</p>
-						<a class="button is-danger">Yes</a>	
+						<a class="button is-danger next">Yes</a>	
 						<a class="button is-dark">No</a>
 					</div>
 				</article>
@@ -87,7 +90,7 @@
 							requested that we not let those younger than 24 
 							contact them because of past rude behavior by 
 							younger men.</p>
-						<a class="button is-danger">Yes</a>	
+						<a class="button is-danger next">Yes</a>	
 						<a class="button is-dark">No</a>
 					</div>
 				</article>
@@ -106,7 +109,7 @@
 								Click on the "Continue" button 
 								and search on the basis of your answers.
 							</p>
-						<a class="button is-danger continue">Continue <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+						<a class="button is-danger continue next">Continue <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
 				</article>
 
@@ -118,10 +121,10 @@
 					<div class="message-body">
 						<p class="has-text-centered">YOUR GENDER? </p>
 						<form >
-							<a class="button is-danger is-outlined">Woman</a>
-							<a class="button is-danger is-outlined">Man</a>
-							<a class="button is-danger is-outlined">Couple</a>
-							<a class="button is-danger is-outlined">Trans</a>
+							<a class="button is-danger is-outlined next">Woman</a>
+							<a class="button is-danger is-outlined next">Man</a>
+							<a class="button is-danger is-outlined next">Couple</a>
+							<a class="button is-danger is-outlined next">Trans</a>
 						</form>
 					</div>
 				</article>
@@ -161,7 +164,7 @@
 								<span class="control">
 									<input class="input short is-danger" type="text" name="yy" value="" placeholder="YYYY">
 								</span>
-								<span class="button is-danger arrow-but arrow-right"><i class="fa fa-angle-right" aria-hidden="true"></i> </span>
+								<span class="button is-danger arrow-but arrow-right next"><i class="fa fa-angle-right" aria-hidden="true"></i> </span>
 							</div>
 						</form>
 					</div>
@@ -176,7 +179,7 @@
 						<p class="has-text-centered">Email</p>
 						<form >
 							<div class="form-elems is-flex">
-								<span class="button is-dark arrow-but arrow-left"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+								<span class="button is-dark arrow-but arrow-left next"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
 								<span class="control">
 									<input class="input is-danger" type="text" name="email" value="" placeholder="">
 								</span>
@@ -187,7 +190,7 @@
 				</article>
 
 				<!--slide-12-->
-				<article class="message is-danger slide-12 active">
+				<article class="message is-danger slide-12 ">
 					<div class="message-header">
 						<p>DISCREET ADULT ENCOUNTERS! <span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb"></span><span class="bulb current"></span></p>
 					</div>
@@ -195,7 +198,7 @@
 						<p class="has-text-centered">Password</p>
 						<form >
 							<div class="form-elems is-flex">
-								<span class="button is-dark arrow-but arrow-left"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+								<span class="button is-dark arrow-but arrow-left next"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
 								<span class="control">
 									<input class="input is-danger" type="password" name="pass" value="" placeholder="">
 								</span>
