@@ -3,7 +3,16 @@ $( document ).ready(function() {
         var parent = this.closest('.message');
         if($(this).hasClass('next')){
             $(parent).removeClass('active').next().addClass('active');
-        }else{
+        }else if(($(this).hasClass('splash'))){
+			var w = $(window).width();
+			$('.back-full').hide(1000);
+				if(w > 1200){
+				$('.back').show(1000);
+				}else{
+					$('.back-left').show(1000);
+				}
+			$(this).closest('.message').removeClass('active').next().addClass('active');
+		}else{
            $(parent).removeClass('active').prev().addClass('active'); 
         }
     })

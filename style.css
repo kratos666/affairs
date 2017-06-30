@@ -4,12 +4,26 @@ body{
 	position: relative;
 	font-size: 2rem;
 }
+.back-full{
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	background: url(images/full.jpg);
+}
 .back{
 	position: absolute;
 	width: 50%;
 	top: 0;
 	min-height: 100vh;
-	z-index: 1
+	z-index: 1;
+	display: none;
+}
+.invis{
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	margin-right: 50px;
+	
 }
 .back.back-left{
 	background: url(images/left-bg.jpg);
@@ -88,7 +102,16 @@ body{
     transform: none;
   }
 }
-
+.message.is-danger.slide-1{
+	width: 75%;
+	margin: -200px 0 0 -200px;
+}
+.message.is-danger.slide-1 span{
+	font-size: 1.5rem;
+}
+.message.is-danger.slide-1 a{
+	border: none;
+}
 .active {
 	z-index: 10;
 	opacity: 1;
@@ -220,4 +243,16 @@ body{
 .button.arrow-but.arrow-right::before{
 	left: 0;
 	border-radius:0 20px 20px 0;
+}
+
+@media only screen and (max-width:1200px) {
+.back.back-right{
+	display: none;
+}
+.back.back-left{
+		background: url(images/left-bg.jpg);
+		background-size: cover;
+		width: 100%;
+		height: 100vh;
+	}
 }
