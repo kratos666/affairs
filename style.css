@@ -13,11 +13,12 @@ body{
 }
 .back{
 	position: absolute;
-	width: 50%;
+	width: 60%;
 	top: 0;
 	min-height: 100vh;
 	z-index: 1;
 	display: none;
+	background-size: cover
 }
 .invis{
 	display: inline-block;
@@ -209,9 +210,12 @@ body{
 	text-align: center;
 }
 
-form .button{
+ form .button{
 	margin-top: 10px
 }
+ form .button.arrow-but{
+	 margin-top: 0
+ }
 .form-elems{
 	justify-content: space-around;
 }
@@ -261,6 +265,9 @@ form .button{
 @media all and  (max-width:1200px) {
 	.back.back-right{
 		display: none;
+	}
+	.message.is-danger.slide-1{
+		margin: -50px 0 0 -200px;
 	}
 	.back.back-left{
 			background: url(images/left-bg.jpg);
