@@ -279,3 +279,10 @@ body{
 		margin-bottom: 10px;
 	}	
 }
+
+p.error {
+ text-align: center !important;
+ font-size: 0.65em;
+ color: #FF204C;
+ padding: 5px 0;
+}
