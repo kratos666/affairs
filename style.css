@@ -286,3 +286,13 @@ p.error {
  color: #FF204C;
  padding: 5px 0;
 }
+
+.slide-10 .select select{
+	background-color: transparent;
+	border: none;
+	font-size: 2rem;
+	color: #7d7d7d;
+}
+.slide-10 .input.short{
+	padding-left: 30px;
+}
