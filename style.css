@@ -30,7 +30,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	z-index: 1;
 	display: none;
 	background-size: cover;
-	background-repeat:no-repeat 
+	background-repeat:no-repeat;
+	background-position: 50%; 
 }
 .invis{
 	display: inline-block;
@@ -125,7 +126,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 .message.is-danger.slide-1{
 	width: 75%;
-	margin: -200px 0 0 -200px;
+	margin: -50px 0 0 -200px;
 }
 .message.is-danger.slide-1 span{
 	font-size: 1.5rem;
@@ -285,7 +286,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		margin:0
 	}
 }
-@media all and  (max-width:1200px) {
+@media all and  (max-width:1370px) {
 	body, .message-header,.button{
 		font-size: 1.5rem;
 	}
