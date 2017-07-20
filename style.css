@@ -8,8 +8,19 @@ body{
 	position: absolute;
 	height: 100vh;
 	width: 100%;
-	background: url(images/full.jpg);
+	background: url(images/full.jpg) no-repeat;
 	background-size: cover;
+	background-position: 50%;
+}
+.inner-back{
+	width: 100%;
+	height: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+56 */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 56%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 56%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 56%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 .back{
 	position: absolute;
@@ -18,7 +29,8 @@ body{
 	min-height: 100vh;
 	z-index: 1;
 	display: none;
-	background-size: cover
+	background-size: cover;
+	background-repeat:no-repeat 
 }
 .invis{
 	display: inline-block;
@@ -42,8 +54,11 @@ body{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	background: #000;
+	overflow: hidden
 }
 .header{
+	z-index: 10;
 	padding-left: 15%;
 	padding-top: 30px;
 	flex: 1 1 100%;
@@ -55,6 +70,7 @@ body{
 	background-size: contain
 }
 .footer{
+	z-index: 10;
 	width: 100%;
 	background-color: transparent;
 	padding: 10px 20px 350px;
@@ -64,6 +80,7 @@ body{
 	position: relative
 }
 .message{
+	max-width: 700px;
 	opacity: 0;
 	position: absolute;
 	border-radius:20px; 
@@ -127,6 +144,9 @@ body{
 .is-danger{
 	background-color: #ed217c;
 }
+.message.is-danger .message-header{
+	background-color: #ed217c;
+} 
 .message-header{
 	border-radius:20px 20px 0 0;
 	font-family: 'Open Sans', sans-serif;
@@ -185,7 +205,7 @@ body{
 	border-radius: 50%;
 	vertical-align: middle;
 }
-.bulb:first-child{margin-left: 80px}
+.bulb:first-child{margin-left: 40px}
 .bulb.current{opacity: 1}
 
 .button.continue{
@@ -248,6 +268,9 @@ body{
 	border-radius:20px 0 0 20px;
 
 }
+.button.is-danger{
+	background-color: #ad004d;
+}
 .button.arrow-but.arrow-right{
 	padding: 2px 20px 4px 45px;
 }
@@ -263,6 +286,9 @@ body{
 	}
 }
 @media all and  (max-width:1200px) {
+	body, .message-header,.button{
+		font-size: 1.5rem;
+	}
 	.back.back-right{
 		display: none;
 	}
