@@ -6,7 +6,7 @@ $( document ).ready(function() {
         }else if(($(this).hasClass('splash'))){
 			var w = $(window).width();
 			$('.back-full').hide(1000);
-				if(w > 1200){
+				if(w > 1370){
 				$('.back').show(1000);
 				}else{
 					$('.back-left').show(1000);
