@@ -291,13 +291,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	border-radius:0 20px 20px 0;
 }
 
-@media all and (max-width:460px) {
-	.message.is-danger.slide-1 {
-		width: 50%;
-		margin:0
-	}
-}
-@media all and  (max-width:1200px) {
+
+
+
+@media(max-width:1200px) {
 	body, .message-header,.button{
 		font-size: 1.5rem;
 	}
@@ -316,6 +313,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	.slide-1 .button.is-dark{
 		margin-bottom: 10px;
 	}	
+}
+
+@media (max-width:460px) {
+	.container{
+		width: 90%;
+	}
+	.message.is-danger.slide-1 {
+		width: 100%;
+		margin:0
+	}
 }
 
 p.error {
