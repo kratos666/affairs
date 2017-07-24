@@ -27,9 +27,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	width: 50%;
 	top: 0;
 	min-height: 100vh;
+	max-width: 1000px
 	z-index: 1;
 	display: none;
-	background-size: cover;
+	background-size: contain;
 	background-repeat:no-repeat;
 	background-position: 50%; 
 }
@@ -42,11 +43,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 .back.back-left{
 	background-image: url(images/left-bg.jpg);
-	left: 0;
+	background-position-x:right; 
+	right: 50%
 }
 .back.back-right{
 	background-image: url(images/right-bg.jpg);
-	right: 0;
+	background-position-x: left;
+	left: 50%;
 }
 .wrapper{
 	position: relative;
@@ -294,22 +297,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		margin:0
 	}
 }
-@media all and  (max-width:1370px) {
+@media all and  (max-width:1200px) {
 	body, .message-header,.button{
 		font-size: 1.5rem;
 	}
-	.back.back-right{
+/* 	.back.back-right{
 		display: none;
-	}
+	} 
 	.message.is-danger.slide-1{
 		margin: -50px 0 0 -200px;
 	}
 	.back.back-left{
-/* 			background: url(images/left-bg.jpg); */
+			background: url(images/left-bg.jpg); 
 			background-size: cover;
 			width: 100%;
 			height: 100vh;
-		}
+		}*/
 	.slide-1 .button.is-dark{
 		margin-bottom: 10px;
 	}	
