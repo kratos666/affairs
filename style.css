@@ -314,14 +314,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		margin-bottom: 10px;
 	}	
 }
+@media (max-width:320px) {
+	.container{
+		font-size: 1.2rem
+		width: 100%;
+	}
+	.message.is-danger.slide-1 span {
+	font-size: 1.2rem;
+	font-weight: bold
+}
+}
 
 @media (max-width:460px) {
+	.logo {
+		width: 90%;
+
+	}
+	.invis{width: 150px;}
 	.container{
 		width: 90%;
+		font-size: 1.2rem
 	}
 	.message.is-danger.slide-1 {
 		width: 100%;
 		margin:0
+	}
+	.message.is-danger .message-body{
+		margin-bottom: 0
 	}
 }
 
