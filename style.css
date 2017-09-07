@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body{
@@ -322,6 +323,10 @@ p.error {
 	padding: 5px 0;
 	}
 
+	.frame-box{
+		display: none;
+	}
+
 @media screen and(max-width:1200px) {
 	body, .message-header,.button{
 		font-size: 1.5rem;
@@ -518,6 +523,12 @@ p.error {
 	}
 	.mobile-navi .bulb:first-child{
 		margin-left: 0
+	}
+	.frame-box{
+		display: block;
+		height: 100px;
+		width: 100%;
+		text-align: center;
 	}
 }
 
