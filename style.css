@@ -327,6 +327,23 @@ p.error {
 		display: none;
 	}
 
+.back-full:before,.back-full:after{
+	content: "";
+	width: 120px;
+	height: 600px;
+	position: fixed;
+	z-index: 100;
+	top: 250px;
+	background: rgba(225, 225, 225, 0.35)
+}
+.back-full:before{
+	left: 0;
+}
+.back-full:after{
+	right: 0;
+}
+
+
 @media screen and(max-width:1200px) {
 	body, .message-header,.button{
 		font-size: 1.5rem;
@@ -367,6 +384,12 @@ p.error {
 	body, .message-header, .button, .slide-10 .select select, .button, .input {
 		font-size: 1rem;
 	}
+
+	.wrapper {
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
 	.footer{
 		padding: 0;
 		align-self: flex-end;
@@ -529,6 +552,10 @@ p.error {
 		height: 100px;
 		width: 100%;
 		text-align: center;
+		background: rgba(225, 225, 225, 0.67)
+	}
+	.back-full:before,.back-full:after{
+		display: none;
 	}
 }
 
