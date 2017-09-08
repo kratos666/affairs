@@ -327,19 +327,20 @@ p.error {
 		display: none;
 	}
 
-.back-full:before,.back-full:after{
-	content: "";
+.back-full .right-ban,.back-full .left-ban{
 	width: 120px;
 	height: 600px;
 	position: fixed;
 	z-index: 100;
 	top: 250px;
-	background: rgba(225, 225, 225, 0.35)
+	background: rgba(225, 225, 225, 0.35);
+	color: #fff;
+	text-align: center;
 }
-.back-full:before{
+.back-full .left-ban{
 	left: 0;
 }
-.back-full:after{
+.back-full .right-ban{
 	right: 0;
 }
 
@@ -552,9 +553,11 @@ p.error {
 		height: 100px;
 		width: 100%;
 		text-align: center;
-		background: rgba(225, 225, 225, 0.67)
+		background: rgba(225, 225, 225, 0.67);
+		color: #fff;
+		z-index: 100;
 	}
-	.back-full:before,.back-full:after{
+	.back-full .right-ban,.back-full .left-ban{
 		display: none;
 	}
 }
