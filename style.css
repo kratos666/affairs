@@ -586,7 +586,9 @@ p.error {
 	text-align: center;
 	padding: 20px;
 	box-sizing:border-box; 
-	color: #1D1D1D
+	color: #1D1D1D;
+	max-height: 600px;
+	overflow-y: auto;
 }
 
 
