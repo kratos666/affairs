@@ -591,6 +591,14 @@ p.error {
 	max-height: 600px;
 	overflow-y: auto;
 }
+.text h1{
+	font-weight: bold
+}
 
-
+.text p{
+	margin: 7px 0;
+	font-size: 1.4rem;
+	text-align: justify;
+	line-height: 1.3rem
+}
 
